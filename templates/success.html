@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Simple Login Form</title>
+   </head>
+   <style>
+      table{
+      border-style: solid;
+      position: absolute;
+      top: 30%;
+      left : 40%;
+      padding:10px;
+      }
+   </style>
+   <body>
+      <form method="post" action="login.php">
+         <table>
+            <tr bgcolor="black">
+            </tr>
+            <tr height="20"></tr>
+            <tr>
+               <td>Profile Information</td>
+               <td>:</td>
+               <td>
+                <p>
+                    <strong>Id</strong>: {{.UserID}}<br>
+                    <strong>Email</strong>: {{.Email}}<br>
+                    <strong>Name</strong>: {{.Name}}
+                </p>
+               </td>
+            </tr>
+         </table>
+      </form>
+   </body>
+</html>
